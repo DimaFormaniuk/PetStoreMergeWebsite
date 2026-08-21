@@ -1,0 +1,36 @@
+# Local environment and credentials
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+*.mobileprovision
+*.cer
+*.crt
+*.secret
+*.credentials
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local tooling and generated output
+node_modules/
+.wrangler/
+.cache/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+tmp/
+*.log
