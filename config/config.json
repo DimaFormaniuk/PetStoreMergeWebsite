@@ -30,6 +30,12 @@
       },
       "valueType": "BOOLEAN"
     },
+    "promo_backend": {
+      "defaultValue": {
+        "value": "firebase"
+      },
+      "valueType": "STRING"
+    },
     "url_android": {
       "defaultValue": {
         "value": "https://play.google.com/store/apps/details?id=com.SeConTalCompany.MergeBosses"
