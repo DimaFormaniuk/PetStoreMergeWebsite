@@ -78,19 +78,19 @@
       },
       "valueType": "NUMBER"
     },
-    "progress_snapshots_enabled": {
+    "cloud_progress_enabled": {
       "defaultValue": {
         "value": "false"
       },
       "valueType": "BOOLEAN"
     },
-    "progress_snapshots_interval_seconds": {
+    "cloud_progress_min_interval_seconds": {
       "defaultValue": {
         "value": "300"
       },
       "valueType": "NUMBER"
     },
-    "progress_snapshots_max_successful_per_day": {
+    "cloud_progress_max_uploads_per_day": {
       "defaultValue": {
         "value": "20"
       },
