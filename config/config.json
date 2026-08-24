@@ -30,6 +30,18 @@
       },
       "valueType": "BOOLEAN"
     },
+    "promo_backend": {
+      "defaultValue": {
+        "value": "firebase"
+      },
+      "valueType": "STRING"
+    },
+    "cloud_api_base_url": {
+      "defaultValue": {
+        "value": "https://api.secontalcompani.com"
+      },
+      "valueType": "STRING"
+    },
     "url_android": {
       "defaultValue": {
         "value": "https://play.google.com/store/apps/details?id=com.SeConTalCompany.MergeBosses"
@@ -75,6 +87,24 @@
     "delay_save_cloud": {
       "defaultValue": {
         "value": "120"
+      },
+      "valueType": "NUMBER"
+    },
+    "cloud_progress_enabled": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "valueType": "BOOLEAN"
+    },
+    "cloud_progress_min_interval_seconds": {
+      "defaultValue": {
+        "value": "300"
+      },
+      "valueType": "NUMBER"
+    },
+    "cloud_progress_max_uploads_per_day": {
+      "defaultValue": {
+        "value": "20"
       },
       "valueType": "NUMBER"
     },
@@ -128,8 +158,8 @@
     }
   },
   "version": {
-    "versionNumber": "7",
-    "updateTime": "2024-03-24T20:35:33.992585Z",
+    "versionNumber": "8",
+    "updateTime": "2026-08-24T15:26:49.063Z",
     "updateUser": {
       "email": "secontalcompani@gmail.com"
     },
