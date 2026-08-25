@@ -32,7 +32,7 @@
     },
     "promo_backend": {
       "defaultValue": {
-        "value": "firebase"
+        "value": "cloudflare"
       },
       "valueType": "STRING"
     },
@@ -92,7 +92,7 @@
     },
     "cloud_progress_enabled": {
       "defaultValue": {
-        "value": "false"
+        "value": "true"
       },
       "valueType": "BOOLEAN"
     },
@@ -158,8 +158,8 @@
     }
   },
   "version": {
-    "versionNumber": "8",
-    "updateTime": "2026-08-24T15:26:49.063Z",
+    "versionNumber": "9",
+    "updateTime": "2026-08-25T12:00:00.000Z",
     "updateUser": {
       "email": "secontalcompani@gmail.com"
     },
