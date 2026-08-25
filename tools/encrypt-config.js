@@ -30,6 +30,8 @@ if (!inputPath) {
     const canonicalPlaintext = JSON.stringify(plaintext);
     const nonce = crypto.randomBytes(12);
     const cipher = crypto.createCipheriv('aes-256-gcm', key, nonce, { authTagLength: 16 });
+    // Must match Unity RemoteConfigEncryption.BuildAssociatedData exactly.
+    cipher.setAAD(Buffer.from('psm-config-v1|1', 'utf8'));
     const ciphertext = Buffer.concat([
       cipher.update(Buffer.from(canonicalPlaintext, 'utf8')),
       cipher.final(),

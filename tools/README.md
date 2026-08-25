@@ -14,6 +14,8 @@ Remove-Item Env:CONFIG_ENCRYPTION_KEY_B64
 
 The nonce is freshly generated as 12 bytes for every run and the GCM tag is
 16 bytes. The public envelope contains only `format`, `keyId`, `nonce`,
-`ciphertext`, and `tag`. The private source is intentionally gitignored and
+`ciphertext`, and `tag`. AES-GCM authenticates the exact UTF-8 associated data
+`psm-config-v1|1`, matching Unity's `BuildAssociatedData` implementation. The
+private source is intentionally gitignored and
 must not be deployed. Production key provisioning remains an external
 release/build-secret concern; no key is stored in this repository.

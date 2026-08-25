@@ -34,6 +34,8 @@ if (!envelopePath || !keyText) {
       throw new Error('invalid nonce, ciphertext, or tag length');
     }
     const decipher = crypto.createDecipheriv('aes-256-gcm', key, nonce, { authTagLength: 16 });
+    // Must match Unity RemoteConfigEncryption.BuildAssociatedData exactly.
+    decipher.setAAD(Buffer.from('psm-config-v1|' + envelope.keyId, 'utf8'));
     decipher.setAuthTag(tag);
     const plaintext = Buffer.concat([decipher.update(ciphertext), decipher.final()]).toString('utf8');
     JSON.parse(plaintext);
