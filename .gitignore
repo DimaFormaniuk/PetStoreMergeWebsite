@@ -34,3 +34,6 @@ playwright-report/
 test-results/
 tmp/
 *.log
+
+# Private Remote Config authoring source; never deploy or commit.
+/private-config/
