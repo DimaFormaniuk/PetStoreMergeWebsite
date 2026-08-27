@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Draft Privacy Policy for Pet Store Merge.">
+  <meta name="description" content="Privacy information for Pet Store Merge.">
   <meta name="robots" content="noindex, nofollow">
-  <title>Privacy Policy — Pet Store Merge</title>
+  <title>Privacy Policy - Pet Store Merge</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -24,76 +24,116 @@
 
   <main class="legal-main" id="main-content">
     <header class="legal-hero">
-      <p class="eyebrow">Legal draft</p>
+      <p class="eyebrow">Privacy information</p>
       <h1>Privacy Policy</h1>
-      <p class="draft-banner"><strong>Draft — not ready for publication.</strong> TODO: obtain legal review and add the effective date.</p>
-      <p>Last updated: <strong>TODO</strong></p>
+      <p class="draft-banner"><strong>Review copy - not yet ready to be treated as a complete legal notice.</strong> This page records behavior confirmed in the current website and game repositories. The publication questions at the end must be answered and the text must receive legal review before release.</p>
+      <p>Last updated: <strong>27 August 2026</strong></p>
     </header>
 
     <div class="legal-content">
       <section aria-labelledby="scope">
-        <h2 id="scope">1. Scope and operator</h2>
-        <p>This draft applies to Pet Store Merge. The Unity project identifies the Company Name as “SeConTalCompany.”</p>
-        <p class="todo-block"><strong>TODO:</strong> Replace the project Company Name with the complete legal entity name, registered address, privacy contact email, and applicable jurisdiction.</p>
+        <h2 id="scope">1. Scope and project identity</h2>
+        <p>This review copy concerns Pet Store Merge, a casual mobile merge game, and the static website that presents information about it. The website repository identifies the project name as "Pet Store Merge" and the project company name as "SeConTalCompany." The repository does not establish whether that name is a complete legal entity name.</p>
+        <p>The website is configured for <code>secontalcompani.com</code>. This page does not make a claim about the controller, data-protection officer, registered office, or governing jurisdiction because those details are not verified in the repositories.</p>
       </section>
 
-      <section aria-labelledby="information">
-        <h2 id="information">2. Information that may be processed</h2>
-        <p>The game project includes or references services for advertising, consent management, analytics, crash diagnostics, purchases, local notifications, cloud-save or authentication features, and remote configuration. The exact production data flows must be verified before this policy is published.</p>
-        <p>Potential categories may include:</p>
+      <section aria-labelledby="website">
+        <h2 id="website">2. The static website</h2>
+        <p>The website files are static HTML and CSS. The repository contains no first-party account form, contact form, login, comments, or first-party analytics script. The site links to the home page, this policy, the terms page, and mobile-store listings. A visitor who follows an external link is subject to that provider's own privacy notice and terms.</p>
+        <p>The README says that the site is hosted using Cloudflare Pages. The repository does not document the host's request-log configuration, retention, cookie behavior, or any processor terms, so those details must be confirmed separately.</p>
+      </section>
+
+      <section aria-labelledby="game-data">
+        <h2 id="game-data">3. Data handled by the game code</h2>
+        <p>The following categories are supported by code or configuration in the current Unity project. Their availability can vary by platform, build, remote configuration, consent choice, and whether a service is enabled in a released build.</p>
         <ul>
-          <li>device, platform, app-version, and other technical information;</li>
-          <li>diagnostics, crash reports, and performance information;</li>
-          <li>game progress and cloud-save information;</li>
-          <li>purchase and transaction records;</li>
-          <li>advertising and consent signals;</li>
-          <li>notification settings or delivery information;</li>
-          <li>account or platform identifiers; and</li>
-          <li>support correspondence.</li>
+          <li><strong>Device and app information.</strong> The game reads Unity's <code>SystemInfo.deviceUniqueIdentifier</code>. The current code uses it as the Firebase Analytics user ID, as the AppLovin MAX user ID when that service is active, and as an <code>X-Device-Token</code> header for cloud-progress and promo-code requests. App version and platform are also included in saved progress and analytics-related events.</li>
+          <li><strong>Gameplay and usage events.</strong> The game sends Firebase Analytics events through its event adapter. Confirmed event families include tutorial steps, level-ups, completed or replaced orders, shop and ad outcomes, energy purchases, fortune-wheel activity, daily-task rewards, promo-code use, ratings, and purchase or restore actions. Some events include gameplay, product, level, platform, or result values.</li>
+          <li><strong>Crash and diagnostic information.</strong> Firebase Crashlytics is initialized by the project, and the code enables reporting uncaught exceptions as fatal. The repository does not define the complete diagnostic fields retained by Firebase.</li>
+          <li><strong>Local game state.</strong> Progress is stored locally through Unity preferences. The model includes level and experience, in-game currencies, board and item state, orders, shop state, settings, tutorial state, mailbox collection, promo-code history, rating state, daily tasks, advertising counters, fortune-wheel state, play time, game counters, user/app counters, and purchase restoration or pending-confirmation state.</li>
+          <li><strong>Cloud progress.</strong> When enabled by configuration, a JSON progress snapshot contains the cloud-save schema version, save time, total play time, app version, platform, and the player-progress model described above. The snapshot is posted over HTTPS to the configured cloud API with the device token header.</li>
+          <li><strong>Promo-code requests.</strong> The current private remote configuration enables the promo-code interface and selects a Cloudflare backend. A claim request sends the entered promo code to the cloud API together with the device token header. The repository does not show an email, name, or custom account field in that request.</li>
+          <li><strong>Notification settings.</strong> On Android and iOS the game requests operating-system notification permission and schedules local "energy full" reminders when the in-game notification setting is enabled. The code shown here schedules local notifications; it does not establish a remote push-message database or a remote push-token workflow.</li>
         </ul>
-        <p>This list does not confirm that every category is collected in a released build.</p>
       </section>
 
       <section aria-labelledby="services">
-        <h2 id="services">3. Third-party services</h2>
-        <p>Project files contain integrations or code related to Firebase services (including Analytics, Crashlytics, and Storage), AppLovin MAX advertising and consent features, Unity In-App Purchasing, Google Play Games, and mobile notifications.</p>
-        <p class="todo-block"><strong>TODO:</strong> Confirm which services and mediation partners are enabled in each production build. Add the current provider names, purposes, data categories, and official privacy links.</p>
+        <h2 id="services">4. Services and integrations visible in the repository</h2>
+        <p>The project contains code or package configuration for the following services and platform features:</p>
+        <ul>
+          <li>Firebase Analytics and Firebase Crashlytics;</li>
+          <li>AppLovin MAX advertising and its consent-flow configuration;</li>
+          <li>Unity In-App Purchasing;</li>
+          <li>Google Play Games Saved Games on Android player builds;</li>
+          <li>iCloud Key-Value Store synchronization on iOS player builds;</li>
+          <li>the project's HTTPS cloud API at <code>api.secontalcompani.com</code> for optional progress snapshots and promo claims;</li>
+          <li>HTTPS remote configuration, app-version data, mailbox text, and mailbox images served from <code>secontalcompani.com/config/</code>; and</li>
+          <li>Unity mobile-notifications APIs for local reminders.</li>
+        </ul>
+        <p>The checked <code>BaseSettings</code> asset selects simulated ads and simulated purchases for the current project configuration. The code also contains real AppLovin and Unity IAP paths. Therefore the repository alone cannot prove which integrations are active in every store build or which advertising mediation partners are used.</p>
       </section>
 
-      <section aria-labelledby="use-sharing">
-        <h2 id="use-sharing">4. Purposes and sharing</h2>
-        <p class="todo-block"><strong>TODO:</strong> Document verified purposes for processing, the parties that receive data, applicable legal bases, and whether data is sold, shared, or used for targeted advertising under applicable law.</p>
+      <section aria-labelledby="purposes">
+        <h2 id="purposes">5. Purposes supported by the implementation</h2>
+        <p>Based on the code, the listed information can be used to operate and secure game features, synchronize progress, validate promo claims, deliver remote configuration and mailbox content, measure gameplay and ad or purchase outcomes, diagnose crashes, support consent flows, and schedule local reminders. The repositories do not establish that data is sold, shared for targeted advertising, or used for any purpose outside these implementation paths.</p>
+      </section>
+
+      <section aria-labelledby="sharing">
+        <h2 id="sharing">6. Network transfers and sharing</h2>
+        <p>The game makes HTTPS requests for remote configuration, app-version information, mailbox configuration or content, cloud progress, and promo-code claims. Cloud progress and promo requests include the device token header; cloud progress also includes the serialized progress snapshot. Firebase and AppLovin SDKs receive information through their SDK APIs when those integrations are active.</p>
+        <p>Google Play Games and iCloud can process saved-game data when their platform-specific cloud-save paths are available and the player is authenticated or has a supported Apple ID/build. The exact provider roles, regions, sub-processors, international-transfer terms, and retention periods are not specified in this repository.</p>
+      </section>
+
+      <section aria-labelledby="configuration">
+        <h2 id="configuration">7. Remote configuration and upload limits</h2>
+        <p>The private remote configuration committed for the current project lists cloud progress as enabled, with a minimum upload interval of 300 seconds and a maximum of 20 successful uploads per UTC day. It also lists remote mailbox loading as enabled. These values are configuration evidence, not a promise that every released build uses them; the production configuration must be checked before publication.</p>
+        <p>The code requires HTTPS for accepted remote configuration and cloud API URLs. This describes transport and input validation in the code; it is not a guarantee of any provider's security or of a particular retention period.</p>
       </section>
 
       <section aria-labelledby="retention">
-        <h2 id="retention">5. Retention, transfers, and security</h2>
-        <p class="todo-block"><strong>TODO:</strong> Add verified retention periods, deletion practices, international transfer safeguards, and an accurate description of security measures after reviewing provider dashboards and production data flows.</p>
+        <h2 id="retention">8. Storage, retention, and deletion</h2>
+        <p>The repository does not define a user-facing retention schedule, deletion request process, or provider-specific deletion guarantees. Local progress and settings are written to device storage through Unity preferences. Cloud-save, analytics, crash, advertising, purchase, and platform-account retention is controlled in part by the applicable service and platform configuration and must be documented from those systems before publication.</p>
+        <p>The repository contains no verified in-game personal-data deletion or access-request workflow. Do not infer a retention period from the upload interval or from the local save format.</p>
+      </section>
+
+      <section aria-labelledby="choices">
+        <h2 id="choices">9. Choices and controls visible in the project</h2>
+        <p>Players can use platform controls for notification permission and, on iOS, the App Tracking Transparency prompt requested by the game when tracking status is undetermined. The project also contains AppLovin consent-flow settings. The precise consent choices, withdrawal behavior, personalized-ad settings, and regional rights process are not fully represented in this website repository.</p>
+        <p>Turning off a platform permission or removing local app data may affect features, but the project does not define the legal effect of those actions or a guaranteed deletion result.</p>
       </section>
 
       <section aria-labelledby="children">
-        <h2 id="children">6. Children’s privacy</h2>
-        <p class="todo-block"><strong>TODO:</strong> Confirm the intended audience, age rating, consent flow, store declarations, and requirements under the laws of every supported region before adding children’s-privacy statements.</p>
-      </section>
-
-      <section aria-labelledby="rights">
-        <h2 id="rights">7. Your choices and rights</h2>
-        <p class="todo-block"><strong>TODO:</strong> Describe applicable access, correction, deletion, objection, restriction, portability, consent-withdrawal, advertising, notification, and complaint rights, together with a verified request process.</p>
+        <h2 id="children">10. Children's privacy</h2>
+        <p>The repositories do not verify the intended age audience, age rating, child-directed status, parental-consent flow, or applicable regional children's-privacy requirements. No child-specific conclusion is made in this review copy.</p>
       </section>
 
       <section aria-labelledby="changes">
-        <h2 id="changes">8. Changes to this policy</h2>
-        <p class="todo-block"><strong>TODO:</strong> Define how policy updates become effective and how players will be notified of material changes.</p>
+        <h2 id="changes">11. Changes to this policy</h2>
+        <p>This page should be updated when the game's data flows, enabled providers, production configuration, or legal details change. The effective-date rule, notice method, and treatment of material changes have not been supplied by the project owner.</p>
       </section>
 
       <section aria-labelledby="contact">
-        <h2 id="contact">9. Contact</h2>
-        <p class="todo-block"><strong>TODO:</strong> Add the official privacy contact email and postal address.</p>
+        <h2 id="contact">12. Contact</h2>
+        <p>No official privacy email address or postal address is identified as a public contact in the repositories. Please use the confirmation questions below before publishing this page.</p>
+      </section>
+
+      <section aria-labelledby="questions">
+        <h2 id="questions">13. Questions to confirm before publication</h2>
+        <ol>
+          <li>What is the complete legal name and registered address of the operator/controller?</li>
+          <li>What privacy or data-protection email and postal contact should players use?</li>
+          <li>What effective date, governing jurisdictions, and regional rights procedures apply?</li>
+          <li>Which Firebase, AppLovin/MAX, mediation, Unity IAP, Google Play Games, iCloud, Cloudflare, and notification integrations are active in each production build, and what are their official privacy links?</li>
+          <li>What are the verified purposes, legal bases where applicable, international-transfer safeguards, provider retention periods, and deletion process?</li>
+          <li>What audience, age rating, child-directed status, and consent requirements apply?</li>
+          <li>What user-facing process should be used for access, correction, deletion, objection, consent withdrawal, or privacy complaints?</li>
+        </ol>
       </section>
     </div>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 SeConTalCompany. All rights reserved.</p>
+    <p>(c) 2026 SeConTalCompany. All rights reserved.</p>
     <nav aria-label="Legal links">
       <a href="../">Home</a>
       <a href="../terms/">Terms of Service</a>

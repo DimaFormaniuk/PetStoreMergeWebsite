@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Draft Terms of Service for Pet Store Merge.">
+  <meta name="description" content="Terms information for Pet Store Merge.">
   <meta name="robots" content="noindex, nofollow">
-  <title>Terms of Service — Pet Store Merge</title>
+  <title>Terms of Service - Pet Store Merge</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -24,74 +24,115 @@
 
   <main class="legal-main" id="main-content">
     <header class="legal-hero">
-      <p class="eyebrow">Legal draft</p>
+      <p class="eyebrow">Service information</p>
       <h1>Terms of Service</h1>
-      <p class="draft-banner"><strong>Draft — not ready for publication.</strong> TODO: obtain legal review and add the effective date.</p>
-      <p>Last updated: <strong>TODO</strong></p>
+      <p class="draft-banner"><strong>Review copy - not yet ready to be treated as complete legal terms.</strong> This page records service behavior confirmed in the current repositories. The publication questions at the end must be answered and the text must receive legal review before release.</p>
+      <p>Last updated: <strong>27 August 2026</strong></p>
     </header>
 
     <div class="legal-content">
       <section aria-labelledby="operator">
         <h2 id="operator">1. Operator and acceptance</h2>
-        <p>These Terms are intended to govern use of Pet Store Merge and related services. The Unity project identifies the Company Name as “SeConTalCompany.”</p>
-        <p class="todo-block"><strong>TODO:</strong> Add the complete legal entity name, address, official contact email, effective date, acceptance mechanism, and any age or eligibility rules.</p>
+        <p>These review terms concern Pet Store Merge and its related website and game features. The project identifies the company name as "SeConTalCompany," but the repositories do not verify a complete legal entity name, registered address, official contact, acceptance mechanism, or governing jurisdiction.</p>
+        <p>No claim is made here about when a user accepts binding terms. That mechanism must be supplied by the operator and implemented or documented for each supported platform.</p>
       </section>
 
       <section aria-labelledby="service">
-        <h2 id="service">2. The game and related services</h2>
-        <p>The game may include gameplay progression, virtual items, advertising, in-app purchases, notifications, cloud-save or platform-account features, and links to third-party services. Availability and behavior may vary by platform, region, version, and service configuration.</p>
-        <p class="todo-block"><strong>TODO:</strong> Confirm the services enabled in released builds and describe any material platform or regional limitations.</p>
-      </section>
-
-      <section aria-labelledby="conduct">
-        <h2 id="conduct">3. Acceptable use</h2>
-        <p class="todo-block"><strong>TODO:</strong> Add verified rules covering unlawful use, cheating, automation, interference, reverse engineering where legally permitted to restrict it, abuse of other users or support channels, and enforcement.</p>
-      </section>
-
-      <section aria-labelledby="purchases">
-        <h2 id="purchases">4. Purchases and virtual items</h2>
-        <p class="todo-block"><strong>TODO:</strong> Add accurate terms for prices, billing, platform-store rules, refunds, subscriptions if any, virtual currency or items, restoration of purchases, and what happens when the service changes or ends.</p>
-      </section>
-
-      <section aria-labelledby="accounts">
-        <h2 id="accounts">5. Accounts, progress, and termination</h2>
-        <p class="todo-block"><strong>TODO:</strong> Verify whether player accounts and cloud saves are available in production. Then document account security, progress synchronization, deletion, suspension, termination, and data-loss limitations accurately.</p>
-      </section>
-
-      <section aria-labelledby="property">
-        <h2 id="property">6. Intellectual property</h2>
-        <p class="todo-block"><strong>TODO:</strong> Identify the verified rights holder and add the applicable license to use the game, ownership terms, feedback terms, and a process for intellectual-property notices.</p>
-      </section>
-
-      <section aria-labelledby="third-party">
-        <h2 id="third-party">7. Third-party services</h2>
-        <p class="todo-block"><strong>TODO:</strong> Identify enabled third-party services and explain that their own terms may apply, using wording reviewed for the released platforms and regions.</p>
+        <h2 id="service">2. The game and website</h2>
+        <p>Pet Store Merge is a mobile merge game in which players combine pet-store items, discover upgraded items, and complete orders for animal customers. The website is a static information site hosted using Cloudflare Pages according to its README.</p>
+        <p>The project includes gameplay progression, local saves, remote configuration and mailbox content, local notifications, advertising code, in-app-purchase code, optional platform cloud saves, analytics and crash diagnostics, and promo-code functionality. A feature can vary by platform, region, build, consent choice, network availability, and remote configuration.</p>
       </section>
 
       <section aria-labelledby="availability">
-        <h2 id="availability">8. Updates, availability, and ending the service</h2>
-        <p class="todo-block"><strong>TODO:</strong> Add accurate terms for game updates, compatibility, maintenance, feature changes, discontinuation, notices, and any effect on purchases or progress.</p>
+        <h2 id="availability">3. Availability and changes</h2>
+        <p>The game downloads remote configuration, app-version data, mailbox configuration, and related content from the project's HTTPS configuration host. The current private configuration enables mailbox loading and lists cloud progress, promo-code, store, daily-task, and notification-related feature flags.</p>
+        <p>The project does not promise uninterrupted availability, a particular feature set, compatibility with every device, or a specific update schedule. Maintenance, version changes, regional limitations, and discontinuation terms must be confirmed by the operator.</p>
       </section>
 
-      <section aria-labelledby="liability">
-        <h2 id="liability">9. Disclaimers and liability</h2>
-        <p class="todo-block"><strong>TODO:</strong> Have qualified counsel draft warranty disclaimers, limitations of liability, indemnity terms if appropriate, and mandatory consumer-law carve-outs for the supported jurisdictions.</p>
+      <section aria-labelledby="accounts">
+        <h2 id="accounts">4. Progress, platform accounts, and cloud saves</h2>
+        <p>The repositories do not show a custom Pet Store Merge username, password, or account-registration flow. Progress is stored locally and may be synchronized through platform-specific services: Google Play Games Saved Games in an Android player build or iCloud Key-Value Store in an iOS player build. Other platforms use the project's unavailable-cloud-save path.</p>
+        <p>The project also contains an optional cloud progress snapshot service that posts serialized progress to <code>api.secontalcompani.com</code> with a device token header. The current remote configuration lists a 300-second minimum interval and 20 successful uploads per UTC day. The exact production activation and data-retention terms must be verified.</p>
+        <p>Because the repository does not define a user-facing account deletion or guaranteed recovery process, players should not treat cloud synchronization as a promise that every item of progress can always be restored.</p>
+      </section>
+
+      <section aria-labelledby="conduct">
+        <h2 id="conduct">5. Use of the service</h2>
+        <p>The repositories do not contain a separately approved player code of conduct or an enforcement policy. Players should use the game, website, platform services, and promotional features lawfully and in accordance with the applicable platform rules. Any specific restrictions on cheating, automation, interference, reverse engineering, abuse, or enforcement must be supplied by the operator before this section is used as binding terms.</p>
+      </section>
+
+      <section aria-labelledby="purchases">
+        <h2 id="purchases">6. Purchases and virtual content</h2>
+        <p>The Unity project contains an in-app-purchasing integration and a purchase-restore path. The checked <code>BaseSettings</code> asset selects simulated purchases for the current project configuration, while real Unity IAP paths are present in code. This repository therefore does not prove which products or prices are offered in a store build.</p>
+        <p>The game model contains in-game currencies and items, including USD, Coin, Energy, board items, shop content, and rewards. The repositories do not establish that virtual content is transferable, redeemable for cash, or refundable by the operator. Prices, taxes, subscriptions, billing, refunds, restoration, and the effect of service changes must follow the applicable store rules and be documented by the operator.</p>
+      </section>
+
+      <section aria-labelledby="ads">
+        <h2 id="ads">7. Advertising and consent</h2>
+        <p>The project contains AppLovin MAX rewarded and interstitial advertising code, ad-result events, and a consent-flow configuration. The checked project settings select simulated ads, so the repository alone cannot establish that live ads are served in a particular release or identify every mediation partner.</p>
+        <p>On iOS the project requests App Tracking Transparency authorization when the status is undetermined. Consent behavior, personalized-ad choices, and the providers active in each region must be confirmed for the production build. The related privacy details are described in the <a href="../privacy/">Privacy Policy review copy</a>.</p>
+      </section>
+
+      <section aria-labelledby="promo">
+        <h2 id="promo">8. Promo codes and external content</h2>
+        <p>The project includes promo-code input and a Cloudflare-backed claim path. The current private configuration enables that interface. A claim is sent to the configured cloud API together with a device token and the entered code; the repository does not define a cash value or general transfer right for a reward.</p>
+        <p>Remote mailbox content can include text, images, and external actions. Following an external action opens a destination outside the game. The operator should identify and approve those destinations and their terms before publication.</p>
+      </section>
+
+      <section aria-labelledby="property">
+        <h2 id="property">9. Intellectual property</h2>
+        <p>The website and game use the Pet Store Merge name, artwork, code, configuration, text, and other project content. The website footer attributes the project to "SeConTalCompany," but the complete rights-holder identity and license terms are not verified in the repositories.</p>
+        <p>Do not rely on this review copy to grant a license beyond the permissions necessarily required to access and play an authorized release. A verified ownership statement, player license, feedback rule, and intellectual-property notice process must be supplied by the operator.</p>
+      </section>
+
+      <section aria-labelledby="third-party">
+        <h2 id="third-party">10. Third-party platforms and services</h2>
+        <p>Use of a mobile store, Google Play Games, iCloud, Firebase, AppLovin MAX, Cloudflare-hosted endpoints, or another integrated provider may be subject to that provider's separate terms and privacy notice. The repositories do not supply a complete, production-verified list of providers, sub-processors, regions, or links. Platform rules can also control purchases, refunds, account access, and notifications.</p>
+      </section>
+
+      <section aria-labelledby="termination">
+        <h2 id="termination">11. Suspension, termination, and service end</h2>
+        <p>The project does not define binding suspension, termination, account-closure, refund-on-termination, or notice procedures. It also does not define what happens to virtual content, cloud progress, promo rewards, or local saves if a feature or the service is changed or discontinued. Those rules must be provided and reviewed for the supported regions before publication.</p>
+      </section>
+
+      <section aria-labelledby="warranties">
+        <h2 id="warranties">12. Disclaimers and liability</h2>
+        <p>The code shows that network services can be unavailable, cloud synchronization can time out, remote content can fail to load, and platform features can be unsupported. This is a factual description of implementation behavior, not a legal warranty disclaimer.</p>
+        <p>Qualified counsel must supply any warranty exclusions, liability limits, indemnity language, dispute terms, and mandatory consumer-law exceptions. Nothing on this page is intended to remove rights that cannot legally be waived.</p>
       </section>
 
       <section aria-labelledby="law">
-        <h2 id="law">10. Governing law and disputes</h2>
-        <p class="todo-block"><strong>TODO:</strong> Add the verified governing law, venue, dispute-resolution process, and any region-specific consumer rights. Do not publish this section with placeholders.</p>
+        <h2 id="law">13. Governing law and disputes</h2>
+        <p>No governing law, venue, arbitration process, complaint channel, or region-specific dispute rule is verified in the repositories. This section must not be published as binding terms until the operator supplies those details and obtains legal review.</p>
+      </section>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">14. Changes to these terms</h2>
+        <p>The project does not define an effective-date rule or a method for notifying players about material changes. The operator should specify how updates are published, when they take effect, and how continued use or a platform confirmation relates to acceptance.</p>
       </section>
 
       <section aria-labelledby="contact">
-        <h2 id="contact">11. Contact</h2>
-        <p class="todo-block"><strong>TODO:</strong> Add the official support or legal contact email and postal address.</p>
+        <h2 id="contact">15. Contact</h2>
+        <p>No official support, legal, or postal contact is identified as a public contact in the repositories. Please use the confirmation questions below before publishing this page.</p>
+      </section>
+
+      <section aria-labelledby="questions">
+        <h2 id="questions">16. Questions to confirm before publication</h2>
+        <ol>
+          <li>What is the complete legal name, address, and verified rights holder/operator identity?</li>
+          <li>What support and legal email or postal contact should players use?</li>
+          <li>What is the acceptance mechanism, effective date, age/eligibility rule, governing law, venue, and dispute process?</li>
+          <li>Which platforms, store listings, products, prices, taxes, subscriptions, refunds, and restore rules are active in each release?</li>
+          <li>Which advertising, consent, analytics, crash, cloud-save, remote-content, and payment providers are active in production, and which provider terms must be linked?</li>
+          <li>What conduct rules, enforcement actions, service-change rules, termination rules, and treatment of virtual content apply?</li>
+          <li>Which mandatory consumer protections and region-specific terms must be included?</li>
+        </ol>
       </section>
     </div>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 SeConTalCompany. All rights reserved.</p>
+    <p>(c) 2026 SeConTalCompany. All rights reserved.</p>
     <nav aria-label="Legal links">
       <a href="../">Home</a>
       <a href="../privacy/">Privacy Policy</a>
