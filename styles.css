@@ -260,7 +260,13 @@ h3 { margin-bottom: 0.75rem; font-size: 1.35rem; }
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(1.2rem);
 }
-.app-card img { width: 3.9rem; height: 3.9rem; border-radius: 1rem; }
+.app-card img {
+  width: 3.9rem;
+  height: 3.9rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 1rem;
+  object-fit: cover;
+}
 .app-card span, .app-card small { display: block; }
 .app-card small { margin-top: 0.2rem; color: rgba(255, 255, 255, 0.58); }
 .hero-glow { position: absolute; border-radius: 50%; filter: blur(4rem); pointer-events: none; }
@@ -424,6 +430,9 @@ h3 { margin-bottom: 0.75rem; font-size: 1.35rem; }
 }
 .closing-icon {
   width: clamp(7rem, 14vw, 11rem);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 27%;
   box-shadow: 0 1.5rem 3rem rgba(22, 125, 242, 0.2);
 }
@@ -456,7 +465,13 @@ h3 { margin-bottom: 0.75rem; font-size: 1.35rem; }
   color: var(--ink-soft);
 }
 .footer-brand { display: flex; align-items: center; gap: 0.75rem; }
-.footer-brand img { width: 2.5rem; height: 2.5rem; border-radius: 0.8rem; }
+.footer-brand img {
+  width: 2.5rem;
+  height: 2.5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
 .footer-brand p, .footer-brand span { display: block; margin: 0; }
 .footer-brand strong { color: var(--ink); }
 .footer-brand span { margin-top: 0.1rem; font-size: 0.78rem; }
@@ -490,7 +505,7 @@ body:has(.legal-main) .site-header nav a { color: var(--ink-soft); }
   .hero-showcase { min-height: 34rem; }
   .phone-front { width: min(17rem, 65vw); }
   .phone-back { margin-left: -10rem; }
-  .app-card { right: -2rem; }
+  .app-card { right: 0; }
   .game-loop { grid-template-columns: 1fr; gap: 2.5rem; }
   .section-heading h2 { max-width: 12ch; }
   .closing { grid-template-columns: auto 1fr; }
