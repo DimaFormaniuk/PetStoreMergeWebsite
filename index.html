@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pet Store Merge is a casual mobile merge game about combining pet supplies and completing pet customer orders.">
+  <meta name="description" content="Pet Store Merge is a cozy merge adventure where every match helps you care for pets, complete orders, and grow a joyful pet shop.">
+  <meta name="theme-color" content="#07183b">
   <meta property="og:title" content="Pet Store Merge">
-  <meta property="og:description" content="Combine pet supplies, complete orders, and grow your pet store.">
+  <meta property="og:description" content="Merge supplies, delight your pet customers, and build a shop they will love.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://secontalcompani.com/">
   <meta property="og:image" content="https://secontalcompani.com/og.png">
@@ -13,9 +14,10 @@
   <meta property="og:image:type" content="image/png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pet Store Merge">
-  <meta name="twitter:description" content="Combine pet supplies, complete orders, and grow your pet store.">
+  <meta name="twitter:description" content="Merge supplies, delight your pet customers, and build a shop they will love.">
   <meta name="twitter:image" content="https://secontalcompani.com/og.png">
-  <title>Pet Store Merge</title>
+  <title>Pet Store Merge — A cozy merge adventure</title>
+  <link rel="icon" href="assets/pet-store-merge-icon.jpg" type="image/jpeg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,73 +25,118 @@
 
   <header class="site-header">
     <a class="brand" href="./" aria-label="Pet Store Merge home">
-      <span class="brand-mark" aria-hidden="true">P</span>
+      <img class="brand-icon" src="assets/pet-store-merge-icon.jpg" width="48" height="48" alt="">
       <span>Pet Store Merge</span>
     </a>
     <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#platforms">Platforms</a>
-      <a href="privacy/">Privacy</a>
-      <a href="terms/">Terms</a>
+      <a href="#game">The game</a>
+      <a href="#how-it-plays">How it plays</a>
+      <a href="#screens">Screens</a>
+      <a class="nav-store" href="#availability">App Store</a>
     </nav>
   </header>
 
   <main id="main-content">
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero" id="game" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
       <div class="hero-copy">
-        <p class="eyebrow">A casual mobile merge game</p>
-        <h1 id="hero-title">Build a better pet store, one merge at a time.</h1>
-        <p class="hero-text">Combine pet supplies, discover upgraded items, and complete orders for pet customers.</p>
-        <div class="actions" aria-label="Store availability">
-          <span class="button button-muted" aria-label="iOS store link pending verification">iOS link coming soon</span>
-          <span class="button button-muted" aria-label="Android store link pending verification">Android link coming soon</span>
+        <div class="platform-pill"><span class="status-dot" aria-hidden="true"></span> Made for iPhone</div>
+        <h1 id="hero-title">A little shop.<br><span>A whole pet world.</span></h1>
+        <p class="hero-text">Match useful supplies, discover delightful upgrades, and fill every order with a little more care. Your pet shop grows one satisfying merge at a time.</p>
+        <div class="hero-actions" id="availability">
+          <div class="store-badge" aria-label="Pet Store Merge is coming to the App Store">
+            <span class="store-badge-symbol" aria-hidden="true">A</span>
+            <span><small>Coming soon to the</small>App Store</span>
+          </div>
+          <p>Launching first on iOS.<br>More platforms may follow.</p>
         </div>
-        <p class="verification-note"><strong>TODO:</strong> Add verified App Store and Google Play URLs before production publication.</p>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <span class="tile tile-one">1</span>
-        <span class="merge-symbol">+</span>
-        <span class="tile tile-two">1</span>
-        <span class="merge-arrow">→</span>
-        <span class="tile tile-result">2</span>
+
+      <div class="hero-showcase" aria-label="Pet Store Merge gameplay preview">
+        <div class="phone phone-back" aria-hidden="true">
+          <img src="assets/app-store-merge.jpg" width="900" height="1951" alt="">
+        </div>
+        <div class="phone phone-front">
+          <img src="assets/app-store-open-shop.jpg" width="900" height="1951" alt="Pet Store Merge board filled with pet food, toys, and grooming supplies">
+        </div>
+        <div class="app-card" aria-hidden="true">
+          <img src="assets/pet-store-merge-icon.jpg" width="78" height="78" alt="">
+          <span><strong>Pet Store Merge</strong><small>Cozy merge adventure</small></span>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#how-it-plays">See how it plays <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="game-loop" id="how-it-plays" aria-labelledby="loop-title">
+      <div class="section-heading">
+        <p class="eyebrow">The heart of the game</p>
+        <h2 id="loop-title">Every merge makes a pet’s day.</h2>
+        <p>Start with simple supplies. Combine matching items to discover something better, complete requests, and turn your store into a happy home for every visitor.</p>
+      </div>
+      <ol class="loop-steps">
+        <li><span>01</span><strong>Match</strong><p>Bring two matching pet supplies together.</p></li>
+        <li><span>02</span><strong>Discover</strong><p>Unlock upgraded food, toys, and grooming gear.</p></li>
+        <li><span>03</span><strong>Care</strong><p>Complete orders for your animal customers.</p></li>
+        <li><span>04</span><strong>Grow</strong><p>Earn rewards and open more of your pet world.</p></li>
+      </ol>
+    </section>
+
+    <section class="screens-section" id="screens" aria-labelledby="screens-title">
+      <div class="screens-intro">
+        <p class="eyebrow">Inside the shop</p>
+        <h2 id="screens-title">Small moments. Feel-good progress.</h2>
+        <p>There is always a useful next move: create the item an order needs, finish a daily goal, collect a reward, or discover what is waiting beyond the next level.</p>
+      </div>
+      <div class="screens-grid">
+        <figure class="screen-card screen-card-one">
+          <div class="screen-frame">
+            <img src="assets/app-store-merge.jpg" width="900" height="1951" loading="lazy" alt="Two matching yarn balls merging into an upgraded pet toy">
+          </div>
+          <figcaption><span>Merge &amp; discover</span><p>Turn familiar supplies into surprising new items.</p></figcaption>
+        </figure>
+        <figure class="screen-card screen-card-two">
+          <div class="screen-frame">
+            <img src="assets/app-store-orders.jpg" width="900" height="1951" loading="lazy" alt="Daily tasks and pet shop orders with progress and rewards">
+          </div>
+          <figcaption><span>Make every move count</span><p>Complete orders and daily goals to keep progress flowing.</p></figcaption>
+        </figure>
+        <figure class="screen-card screen-card-three">
+          <div class="screen-frame">
+            <img src="assets/app-store-pet-world.jpg" width="900" height="1951" loading="lazy" alt="A growing Pet Store Merge board with rewards, characters, and new areas">
+          </div>
+          <figcaption><span>Build their happy world</span><p>Level up your shop and unlock more to love.</p></figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2 id="about-title">Merge, discover, deliver.</h2>
-      </div>
-      <div class="section-copy">
-        <p>Pet Store Merge is a mobile merge game set in a pet-store environment. Combine matching items, unlock upgraded products, and complete orders for animal customers.</p>
-        <p class="todo-note"><strong>TODO:</strong> Add approved store copy and screenshots when they are available.</p>
-      </div>
+    <section class="feature-band" aria-label="Game highlights">
+      <article><span aria-hidden="true">✦</span><h3>A satisfying merge board</h3><p>Clear choices, playful chains, and a rewarding reveal with every upgrade.</p></article>
+      <article><span aria-hidden="true">♥</span><h3>Pets worth caring for</h3><p>Food, grooming, toys, and a growing cast of charming customers.</p></article>
+      <article><span aria-hidden="true">↗</span><h3>Progress at your pace</h3><p>Orders, daily tasks, rewards, and new parts of the store to uncover.</p></article>
     </section>
 
-    <section class="section platforms" id="platforms" aria-labelledby="platforms-title">
+    <section class="closing" aria-labelledby="closing-title">
+      <img class="closing-icon" src="assets/pet-store-merge-icon.jpg" width="180" height="180" loading="lazy" alt="Pet Store Merge app icon with a puppy and kitten">
       <div>
-        <p class="eyebrow">Platforms</p>
-        <h2 id="platforms-title">Made for mobile play.</h2>
+        <p class="eyebrow">Your next cozy game</p>
+        <h2 id="closing-title">The shop is almost ready to open.</h2>
+        <p>Pet Store Merge is being prepared for its App Store release. Check back soon and be among the first to welcome every pet through the door.</p>
       </div>
-      <div class="platform-grid">
-        <article class="card">
-          <p class="card-label">Android</p>
-          <h3>Google Play</h3>
-          <p>The current project package is <code>com.SeConTalCompany.MergePetStore</code>.</p>
-          <p class="todo-note"><strong>TODO:</strong> Add the verified Google Play URL.</p>
-        </article>
-        <article class="card">
-          <p class="card-label">iOS</p>
-          <h3>App Store</h3>
-          <p>The project contains an App Store URL, but the listing could not be verified during preview validation.</p>
-          <p class="todo-note"><strong>TODO:</strong> Add the verified App Store URL.</p>
-        </article>
+      <div class="availability-card">
+        <span>First release</span>
+        <strong>Apple App Store</strong>
+        <small>iPhone</small>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 SeConTalCompany. All rights reserved.</p>
+    <div class="footer-brand">
+      <img src="assets/pet-store-merge-icon.jpg" width="40" height="40" alt="">
+      <p><strong>Pet Store Merge</strong><span>© 2026 SeConTalCompany</span></p>
+    </div>
     <nav aria-label="Legal links">
       <a href="privacy/">Privacy Policy</a>
       <a href="terms/">Terms of Service</a>

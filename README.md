@@ -1,16 +1,14 @@
 # Pet Store Merge Website
 
-Static website for Pet Store Merge.
-
-Hosted using Cloudflare Pages.
+Static one-page marketing site for Pet Store Merge, hosted with Cloudflare Pages.
 
 ## Structure
 
-- `/` — game landing page
-- `/privacy/` — Privacy Policy draft
-- `/terms/` — Terms of Service draft
+- `/` — App Store-first game landing page
+- `/assets/` — optimized app icon and App Store marketing screenshots
+- `/privacy/` — Privacy Policy review draft
+- `/terms/` — Terms of Service review draft
 - `/app-ads.txt` — advertising-authority file placeholder
-- `/config/game.json` — public static configuration prototype
+- `/config/` — public game configuration files
 
-The legal pages, store links, advertising entries, and version policy retain
-explicit TODO placeholders until verified information is available.
+The public App Store URL should be connected when the listing is verifiably live. The legal pages and advertising entries retain review placeholders until their publication details are approved.
